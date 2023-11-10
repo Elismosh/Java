@@ -19,14 +19,14 @@ public class Fork extends Dish{
     public void setCost(int cost) {
         this.cost = cost;
     }
-    public int get_cost(){
-        return cost * Amount;
+    public int getPrice(){
+        return cost * amount;
     }
     @Override
     public String toString() {
         return "Fork{" +
-                "cost=" + cost + "Name='" + Name + '\'' +
-                ", Amount=" + Amount +
+                "cost=" + cost + "Name='" + name + '\'' +
+                ", Amount=" + amount +
                 '}';
     }
 }

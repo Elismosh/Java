@@ -16,12 +16,11 @@ class Figures extends JFrame{
     }
     public void paint(Graphics g2) {
         Graphics2D g = (Graphics2D) g2;
-        random_shapes_paint(50, g);
+        randomShapesPaint(50, g);
     }
-    void random_shapes_paint(int shapes, Graphics2D g) {
+    void randomShapesPaint(int shapes, Graphics2D g) {
         for (int i = 0; i < shapes; i++) {
             int choice = (int) (Math.random() * 7);
-
             switch (choice) {
                 case 1:
                     g.setColor(new Color((int) (Math.random() * 0x1000000)));

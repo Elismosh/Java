@@ -6,7 +6,7 @@ public class DishTest {
         System.out.println(vilka);
         System.out.println(vilka.getName());
         System.out.println(vilka.toString());
-        System.out.println(vilka.get_cost());
+        System.out.println(vilka.getPrice());
         System.out.println();
         Dish vilka_slave = (Dish)vilka;
         System.out.println(vilka_slave.toString());
@@ -16,7 +16,7 @@ public class DishTest {
         System.out.println(tarelka);
         System.out.println(tarelka.getName());
         System.out.println(tarelka.toString());
-        System.out.println(tarelka.get_cost());
+        System.out.println(tarelka.getPrice());
         System.out.println();
         Dish tarelka_slave = (Dish)tarelka;
         System.out.println(tarelka_slave.toString());

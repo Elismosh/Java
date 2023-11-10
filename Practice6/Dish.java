@@ -1,34 +1,35 @@
 package Practice6;
 
 public abstract class Dish {
-    protected String Name;
-    protected int Amount;
+    protected String name;
+    protected int amount
+;
     public Dish(String name, int amount) {
-        Name = name;
-        Amount = amount;
+        this.name = name;
+        this.amount = amount;
     }
     public Dish(){
-        Name = "Вилка";
-        Amount = 2;
+        name = "Вилка";
+        amount = 2;
     }
     public String getName() {
-        return Name;
+        return name;
     }
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
     public int getAmount() {
-        return Amount;
+        return amount
+;
     }
     public void setAmount(int amount) {
-        Amount = amount;
+        this.amount = amount;
     }
-    public abstract int get_cost();
+    public abstract int getPrice();
     @Override
     public String toString() {
         return "Dish{" +
-                "Name='" + Name + '\'' +
-                ", Amount=" + Amount +
-                '}';
+                "Name='" + name + '\'' +
+                ", amount =" + amount + '}';
     }
 }

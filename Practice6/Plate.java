@@ -19,14 +19,14 @@ public class Plate extends Dish{
     public void setDepth(int depth) {
         this.depth = depth;
     }
-    public int get_cost(){
-        return Amount * depth / 2;
+    public int getPrice(){
+        return amount * depth / 2;
     }
     @Override
     public String toString() {
         return "Plate{" +
-                "depth=" + depth + "Name='" + Name + '\'' +
-                ", Amount=" + Amount +
+                "depth=" + depth + "Name='" + name + '\'' +
+                ", Amount=" + amount +
                 '}';
     }
 }
